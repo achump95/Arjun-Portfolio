@@ -1,0 +1,399 @@
+{% extends "templates/layouts/default.njk" %}
+{# set variables #}
+{% set slug = '/' %}
+{# don't set title on the index page (defaults to domain value in data.json) #}
+
+{% block content %}
+
+
+<section
+    class="hero uk-section uk-section-default{% if hero.image.enabled and hero.image.src %} hero--with-image{% endif %}"
+    id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid-line"></div>
+    <div class="hero-inner">
+        <div class="hero-content">
+            <p class="hero-eyebrow">Front-End Developer</p>
+            <h1 class="hero-name">Arjun M <br>Ponnappan</h1>
+            <p class="hero-sub">6+ years crafting responsive, accessible, and performance-optimised digital experiences
+                — from
+                pixel to production.</p>
+            <div class="hero-cta">
+                <a href="#work" class="btn-primary uk-button uk-button-primary">View My Work ↓</a>
+                <a href="#contact" class="btn-outline uk-button uk-button-default">Get In Touch</a>
+            </div>
+        </div>
+        {% if hero.image.enabled and hero.image.src %}
+        <figure class="hero-media">
+            <div class="hero-image-frame">
+                <img class="hero-image" src="./images/achu-og.png" alt="{{ hero.image.alt }}" width="420" height="520"
+                    loading="eager" decoding="async" />
+            </div>
+        </figure>
+        {% endif %}
+    </div>
+    <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="uk-section">
+    <p class="section-label reveal">00 — About</p>
+    <div class="divider reveal"></div>
+    <div class="about-grid uk-grid-large" uk-grid>
+        <div class="about-text reveal">
+            <p>I'm a <strong>UI/UX Engineer</strong> based in Kerala, India, specialising in translating thoughtful
+                design into high-performance, cross-browser-compatible web interfaces.</p>
+            <p>My work spans <strong>React ecosystems</strong>, modern UI component libraries, and no-code platforms
+                like Webflow and WordPress. I bring a designer's eye and a developer's rigour to every build.</p>
+            <p>Currently at <strong>Parel Creative Pvt. Ltd.</strong>, collaborating with designers and backend teams to
+                deliver seamless digital products for clients across real estate, hospitality, and technology.</p>
+            <div class="languages">
+                <span class="lang-tag">English</span>
+                <span class="lang-tag">Malayalam</span>
+                <span class="lang-tag">Hindi</span>
+                <span class="lang-tag">Tamil</span>
+            </div>
+        </div>
+        <div class="reveal">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-num">6+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num">4</div>
+                    <div class="stat-label">Companies</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num">10+</div>
+                    <div class="stat-label">Portfolio Projects</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num">5+</div>
+                    <div class="stat-label">Tech Stacks</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills-section uk-section">
+    <p class="section-label reveal">01 — Skills</p>
+    <div class="divider reveal"></div>
+    <h2 class="section-title reveal">The <em>toolkit</em></h2>
+    <div class="skills-grid uk-child-width-1-2@s uk-child-width-1-4@l" uk-grid>
+        <div class="skill-group reveal">
+            <div class="skill-group-icon">⟨⟩</div>
+            <h3>Frontend Core</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">SCSS</span>
+                <span class="skill-tag">JavaScript ES6+</span>
+                <span class="skill-tag">React.js</span>
+            </div>
+        </div>
+        <div class="skill-group reveal">
+            <div class="skill-group-icon">▦</div>
+            <h3>UI Frameworks</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">Material UI</span>
+                <span class="skill-tag">Chakra UI</span>
+                <span class="skill-tag">Bootstrap</span>
+                <span class="skill-tag">UIKit</span>
+                <span class="skill-tag">Bulma / Buefy</span>
+                <span class="skill-tag">React Bootstrap</span>
+            </div>
+        </div>
+        <div class="skill-group reveal">
+            <div class="skill-group-icon">◈</div>
+            <h3>Web Platforms</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">WordPress</span>
+                <span class="skill-tag">Elementor</span>
+                <span class="skill-tag">Webflow</span>
+                <span class="skill-tag">Squarespace</span>
+            </div>
+        </div>
+        <div class="skill-group reveal">
+            <div class="skill-group-icon">✦</div>
+            <h3>Design & Tools</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">Adobe Photoshop</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Accessibility</span>
+                <span class="skill-tag">Performance Opt.</span>
+                <span class="skill-tag">Responsive Design</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="uk-section">
+    <p class="section-label reveal">02 — Experience</p>
+    <div class="divider reveal"></div>
+    <h2 class="section-title reveal">Where I've <em>worked</em></h2>
+    <div class="experience-list">
+
+        <div class="exp-item reveal">
+            <div class="exp-meta">
+                <p class="exp-period">Jun 2023 — Present</p>
+                <span class="exp-current">Current</span>
+            </div>
+            <div>
+                <h3 class="exp-company">Parel Creative Pvt. Ltd.</h3>
+                <p class="exp-role">UI/UX Engineer &amp; Front-End Developer · Kochi</p>
+                <ul class="exp-points">
+                    <li>Interacted directly with clients to understand business requirements and implement UI solutions.
+                    </li>
+                    <li> Implement vibe coding to move beyond conventional coding methods while saving time and improving
+                        creativity.</li>
+                    <li>Utilized AI-powered development tools to improve development speed, workflow efficiency, and
+                        code quality.
+                    </li>
+                    <li>Built responsive websites and web applications for clients across real estate, AI, hospitality,
+                        and education sectors.</li>
+                </ul>
+                <div class="exp-tags">
+                    <span class="exp-tag">React</span>
+                    <span class="exp-tag">Chakra UI</span>
+                    <span class="exp-tag">UIKit</span>
+                    <span class="exp-tag">Webflow</span>
+                    <span class="exp-tag">WordPress</span>
+                    <span class="exp-tag">Squarespace</span>
+                    <span class="exp-tag">Cursor AI</span>
+                    <span class="exp-tag">Claude AI</span>
+        
+                </div>
+            </div>
+        </div>
+        
+        <div class="exp-item reveal">
+            <div class="exp-meta">
+                <p class="exp-period">Feb 2020 — Jun 2023</p>
+            </div>
+            <div>
+                <h3 class="exp-company">LoreMine Technologies</h3>
+                <p class="exp-role">UI/UX Engineer · Kochi</p>
+                <ul class="exp-points">
+                    <li>Developed and maintained responsive applications across multiple client verticals.</li>
+                    <li>Built custom component systems using Material UI and Bulma for scalable frontends.</li>
+                    <li>Worked closely with backend developers for seamless API and data integration.</li>
+                </ul>
+                <div class="exp-tags">
+                    <span class="exp-tag">Material UI</span>
+                    <span class="exp-tag">Bulma</span>
+                    <span class="exp-tag">React</span>
+                    <span class="exp-tag">SCSS</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="exp-item reveal">
+            <div class="exp-meta">
+                <p class="exp-period">Aug 2019 — Jan 2020</p>
+            </div>
+            <div>
+                <h3 class="exp-company">ED Group Pvt. Ltd.</h3>
+                <p class="exp-role">UI/UX Developer · Kochi</p>
+                <ul class="exp-points">
+                    <li>Designed and developed user interfaces for client web platforms.</li>
+                    <li>Implemented responsive and user-friendly layouts in close collaboration with UX designers.</li>
+                </ul>
+                <div class="exp-tags">
+                    <span class="exp-tag">HTML/CSS</span>
+                    <span class="exp-tag">JavaScript</span>
+                    <span class="exp-tag">UX Design</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="exp-item reveal">
+            <div class="exp-meta">
+                <p class="exp-period">Jun 2017 — Nov 2017</p>
+            </div>
+            <div>
+                <h3 class="exp-company">BC to AD Hyperlink Ltd.</h3>
+                <p class="exp-role">Web Developer Trainee · Kochi</p>
+                <ul class="exp-points">
+                    <li>Assisted in front-end feature development and design implementation.</li>
+                    <li>Built foundational expertise in UI/UX principles and core web technologies.</li>
+                </ul>
+                <div class="exp-tags">
+                    <span class="exp-tag">HTML</span>
+                    <span class="exp-tag">CSS</span>
+                    <span class="exp-tag">UI Basics</span>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+        </section>
+        
+        <!-- PORTFOLIO -->
+        <section id="work" class="portfolio-section uk-section">
+            <p class="section-label reveal">03 — Work</p>
+            <div class="divider reveal"></div>
+            <h2 class="section-title reveal">Selected <em>projects</em></h2>
+        
+            <div class="portfolio-filter reveal" uk-margin>
+                <button class="filter-btn uk-button uk-button-default active" onclick="filterCards('all', this)">All</button>
+                <button class="filter-btn uk-button uk-button-default" onclick="filterCards('react', this)">React</button>
+                <button class="filter-btn uk-button uk-button-default" onclick="filterCards('uikit', this)">UIKit</button>
+                <button class="filter-btn uk-button uk-button-default" onclick="filterCards('webflow', this)">Webflow</button>
+                <button class="filter-btn uk-button uk-button-default"
+                    onclick="filterCards('wordpress', this)">WordPress</button>
+                <button class="filter-btn uk-button uk-button-default"
+                    onclick="filterCards('squarespace', this)">Squarespace</button>
+            </div>
+        
+            <div class="portfolio-grid uk-child-width-1-2@s uk-child-width-1-3@l" id="portfolio-grid" uk-grid>
+        
+                <a class="portfolio-card uk-card uk-card-body uk-card-default"
+                    href="https://montanacalicut.malabardevelopers.com/" target="_blank" data-cat="react">
+                    <p class="card-platform">React · Chakra UI</p>
+                    <h3 class="card-title">Montana Estate</h3>
+                    <p class="card-url">montanacalicut.malabardevelopers.com</p>
+                    <span class="card-arrow">↗</span>
+                </a>
+        
+                <a class="portfolio-card uk-card uk-card-body uk-card-default" href="https://admaa.org/" target="_blank"
+                    data-cat="react">
+                    <p class="card-platform">React · React Bootstrap</p>
+                    <h3 class="card-title">ADMAA</h3>
+                    <p class="card-url">admaa.org</p>
+                    <span class="card-arrow">↗</span>
+                </a>
+        
+                <a class="portfolio-card uk-card uk-card-body uk-card-default" href="https://smartplatesolutions.com/"
+                    target="_blank" data-cat="uikit">
+                    <p class="card-platform">UIKit</p>
+                    <h3 class="card-title">Smart Plate Solutions</h3>
+                    <p class="card-url">smartplatesolutions.com</p>
+                    <span class="card-arrow">↗</span>
+                </a>
+        
+                <a class="portfolio-card uk-card uk-card-body uk-card-default" href="https://worklocal.stg2.parel.co/"
+                    target="_blank" data-cat="uikit">
+                    <p class="card-platform">UIKit</p>
+                    <h3 class="card-title">Work Local</h3>
+                    <p class="card-url">worklocal.stg2.parel.co</p>
+                    <span class="card-arrow">↗</span>
+                </a>
+        
+                <a class="portfolio-card uk-card uk-card-body uk-card-default" href="https://globalmusicinstitute.in/"
+                    target="_blank" data-cat="uikit">
+                    <p class="card-platform">UIKit</p>
+                    <h3 class="card-title">Global Music Institute</h3>
+                    <p class="card-url">globalmusicinstitute.in</p>
+                    <span class="card-arrow">↗</span>
+                </a>
+        
+                <a class="portfolio-card uk-card uk-card-body uk-card-default" href="https://pentaemirates.com/" target="_blank"
+                    data-cat="uikit">
+                    <p class="card-platform">UIKit</p>
+                    <h3 class="card-title">Penta Emirates</h3>
+                    <p class="card-url">pentaemirates.com</p>
+                    <span class="card-arrow">↗</span>
+                </a>
+        
+                <a class="portfolio-card uk-card uk-card-body uk-card-default" href="https://www.highwater.ai/" target="_blank"
+                    data-cat="webflow">
+                    <p class="card-platform">Webflow</p>
+                    <h3 class="card-title">High Water AI</h3>
+                    <p class="card-url">highwater.ai</p>
+                    <span class="card-arrow">↗</span>
+                </a>
+        
+                <a class="portfolio-card uk-card uk-card-body uk-card-default" href="https://kaav.com/" target="_blank"
+                    data-cat="wordpress">
+                    <p class="card-platform">WordPress · Elementor</p>
+                    <h3 class="card-title">KAAV Tourism</h3>
+                    <p class="card-url">kaav.com</p>
+                    <span class="card-arrow">↗</span>
+                </a>
+        
+                <a class="portfolio-card uk-card uk-card-body uk-card-default" href="https://unitedsystems.in/" target="_blank"
+                    data-cat="wordpress">
+                    <p class="card-platform">WordPress · Elementor</p>
+                    <h3 class="card-title">United Systems</h3>
+                    <p class="card-url">unitedsystems.in</p>
+                    <span class="card-arrow">↗</span>
+                </a>
+        
+                <a class="portfolio-card uk-card uk-card-body uk-card-default" href="https://marghospitality.com/"
+                    target="_blank" data-cat="wordpress">
+                    <p class="card-platform">WordPress · Elementor</p>
+                    <h3 class="card-title">Marg Hospitality</h3>
+                    <p class="card-url">marghospitality.com</p>
+                    <span class="card-arrow">↗</span>
+                </a>
+        
+                <a class="portfolio-card uk-card uk-card-body uk-card-default" href="https://www.rewiser.in/" target="_blank"
+                    data-cat="squarespace">
+                    <p class="card-platform">Squarespace</p>
+                    <h3 class="card-title">Rewiser</h3>
+                    <p class="card-url">rewiser.in</p>
+                    <span class="card-arrow">↗</span>
+                </a>
+        
+                <a class="portfolio-card uk-card uk-card-body uk-card-default" href="https://demo.parel.co/contentcontent/"
+                    target="_blank" data-cat="uikit">
+                    <p class="card-platform">UIKit</p>
+                    <h3 class="card-title">Content Content</h3>
+                    <p class="card-url">demo.parel.co/contentcontent</p>
+                    <span class="card-arrow">↗</span>
+                </a>
+            </div>
+        </section>
+            <!-- CONTACT -->
+            <section id="contact" class="uk-section">
+                <p class="section-label reveal">04 — Contact</p>
+                <div class="divider reveal"></div>
+                <div class="contact-inner">
+                    <h2 class="section-title reveal">Let's <em>connect</em></h2>
+                    <p class="reveal" style="color: rgba(232,228,220,0.6); font-weight:300; max-width:480px; margin-bottom: 0;">
+                        Open to new opportunities, collaborations, and interesting frontend challenges. Drop me a message.
+                    </p>
+                    <div class="contact-links reveal">
+                        <a href="mailto:achump95@gmail.com" class="contact-link">
+                            <div>
+                                <div class="clink-label">Primary Email</div>
+                                <div class="clink-value">achump95@gmail.com</div>
+                            </div>
+                            <span class="clink-arrow">↗</span>
+                        </a>
+                        <a href="mailto:code.arju@gmail.com" class="contact-link">
+                            <div>
+                                <div class="clink-label">Dev / Code Email</div>
+                                <div class="clink-value">code.arju@gmail.com</div>
+                            </div>
+                            <span class="clink-arrow">↗</span>
+                        </a>
+                        <a href="tel:+919846247405" class="contact-link">
+                            <div>
+                                <div class="clink-label">Phone</div>
+                                <div class="clink-value">+91 98462 47405</div>
+                            </div>
+                            <span class="clink-arrow">↗</span>
+                        </a>
+                        <a href="https://linkedin.com/in/arjun-mp95" target="_blank" class="contact-link">
+                            <div>
+                                <div class="clink-label">LinkedIn</div>
+                                <div class="clink-value">linkedin.com/in/arjun-mp95</div>
+                            </div>
+                            <span class="clink-arrow">↗</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+
+{% endblock %}

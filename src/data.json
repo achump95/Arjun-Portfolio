@@ -1,0 +1,41 @@
+{
+    "meta": {
+        "domain": "Arjun Portfolio",
+        "domain_lower": "uxmallu",
+        "description" : "Arjun Portfolio",
+        "image": "./images/logo/logo.svg"
+    },
+    "hero": {
+        "image": {
+            "enabled": true,
+            "src": "/images/hero/profile.jpg",
+            "alt": "Arjun Ponnappan — Front-End Developer"
+        }
+    },
+    "navItems": [
+        {
+            "item": "/",
+            "item_pretty": "Home"
+        },
+        {
+            "item": "test.html",
+            "item_pretty": "Test page",
+            "dropdown": true,
+            "pages" : [
+                
+                {
+                    "item": "test1.html",
+                    "item_pretty": "Filler 1"
+                },
+                {
+                    "item": "test2.html",
+                    "item_pretty": "Filler 2"
+                },
+                {
+                    "item": "test3.html",
+                    "item_pretty": "Filler 3"
+                }
+            ]
+        }       
+    ]
+}

@@ -1,0 +1,160 @@
+{% extends "templates/layouts/default.njk" %}
+{# set variables #}
+{% set slug = '/' %}
+{# don't set title on the index page (defaults to domain value in data.json) #}
+
+{% block content %}
+
+
+<section>
+    <div class="banner-cover-bg" style="background-image: url(./images/home-bg.jpg); ">
+        <div class="uk-overlay uk-light uk-position-center uk-text-center top-38">
+            <div class="rellax" uk-scrollspy="cls: uk-animation-slide-bottom; delay:200;" data-rellax-speed="-6">
+                <h1>Get in touch </h1>
+            </div>
+        </div>
+        <div class="uk-overlay  uk-padding-remove uk-visible@m">
+            <img class="banner-bg rellax" uk-scrollspy="cls:uk-animation-slide-bottom; delay:800;  "
+                src="./images/banner_md/07.png" data-rellax-speed="2" alt="">
+        </div>
+        <div class="uk-overlay   uk-padding-remove uk-hidden@m">
+            <img class="banner-bg-mobile rellax" uk-scrollspy="cls:uk-animation-slide-bottom; delay:800;  "
+                src="./images/banner_md/07.png" alt="" data-rellax-speed="2">
+        </div>
+    </div>
+    <div class="uk-section-small global-container "></div>
+</section>
+
+<div class="global-container" uk-scrollspy="target: .animate-fade; cls: uk-animation-slide-bottom-medium; delay: 400;">
+    <div class="uk-section uk-container">
+
+        <div class="uk-child-width-1-1 uk-grid-collapase animate-fade" uk-grid>
+            <div>
+                <iframe class="contact-map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4279.993595577276!2d55.381420075384!3d25.265153777667283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5dcb089ca08d%3A0x2eae2ec4677a79db!2sPENTA%20EMIRATES%20CONTRACTING%20LLC!5e1!3m2!1sen!2sin!4v1723041076843!5m2!1sen!2sin"
+                     style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="" style="margin: 0;">
+                <footer>
+                    <div class="" uk-grid>
+                        <div class="uk-width-1-1@m">
+                            <div class="uk-card uk-card-body-lg gray-shade">
+                                <div class="uk-grid uk-grid-collapse  footer-row animate-fade" uk-grid>
+                                    <div class="uk-width-1-1 uk-width-1-2@m ">
+                                        <div class="uk-grid uk-grid-collapse  bb-1-mobile" uk-grid>
+                                            <div class="uk-width-auto footer-icon uk-flex uk-flex-middle">
+                                                <img src="./images/icons/phone.svg" alt="">
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <div class="footer-item ">
+                                                    <a class="uk-link-text" href="tel:+971 4 2511725"><p> +971 4 2511725</p></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-1 uk-width-1-2@m ">
+                                        <div class="uk-grid uk-grid-collapse  " uk-grid>
+                                            <div class="uk-width-auto footer-icon uk-flex uk-flex-middle">
+                                                <img src="./images/icons/phone.svg" alt="">
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <div class="footer-item ">
+                                                    <a class="uk-link-text" href="tel:+971 4 2511725"><p> +971 4 2511725</p></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-grid uk-grid-collapse footer-row animate-fade" uk-grid>
+                                    <div class="uk-width-auto footer-icon">
+                                        <img src="./images/icons/message.svg" alt="">
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <div class="footer-item">
+                                            <a class="uk-link-text" href="mailto:info@pentaemirates.com"><p class=""> info@pentaemirates.com</p></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-grid uk-grid-collapse footer-row animate-fade" uk-grid>
+                                    <div class="uk-width-auto footer-icon">
+                                        <img src="./images/icons/location.svg" alt="">
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <div class="footer-item">
+                                            <h3 class="">Dubai</h3>
+                                            <p class=" ">
+                                                Al Qusais II, Al Nahda St, Dubai, UAE Flat No: M07, 
+                                                Emirates Islamic Bank Building,<br> P.O.Box 97757, 
+                                                Near Al Twar Centre, Al Qusais II, Al Nahda St – Dubai
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="uk-grid uk-grid-collapse footer-row animate-fade" uk-grid>
+                                    <div class="uk-width-auto footer-icon">
+                                        <img src="./images/icons/location.svg" alt="">
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <div class="footer-item">
+                                            <h3 class="">Abu Dhabi</h3>
+                                            <p class=" ">
+                                                Penta Emirates Contracting L.L.C - Branch of Abu Dhabi 1.  Property
+                                                Number PRP64344. M39, <br> Musaffah, Abu Dhabi City
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>
+<section uk-scrollspy="target: .animate-fade; cls: uk-animation-slide-bottom-medium; delay: 400;">
+    <div class="uk-section-large bg-primary ">
+        <div class="uk-container animate-fade">
+            <h2 class="text-dark">Ready to take your<br> business to the <br> next level?</h2>
+            <form class="" uk-grid>
+                
+                <div class="uk-width-1-2@m ">
+                    <input class="uk-input uk-form-large" type="text" placeholder="Full Name" aria-label="Full Name">
+                </div>
+                <div class="uk-width-1-2@m  ">
+                    <input class="uk-input uk-form-large" type="text" placeholder="Email" aria-label="Email">
+                </div>
+                <div class="uk-width-1-1@m  ">
+                    <input class="uk-input uk-form-large" type="text" placeholder="About Project" aria-label="About Project">
+                </div>
+                
+                <div class="uk-width-1-2@s uk-flex uk-flex-middle ">
+                    <img class="pr-4" src="./images/icons/like.png" alt=""> <p class="mt-0 mb-0 text-dark">We would love to help you. Reach out to us today.</p>
+                </div>
+                <div class="uk-width-1-2@s uk-flex uk-flex-middle uk-flex-right ">
+                    <button href="#" class="uk-button  hvr-sweep-to-right-secondary  uk-padding-remove">
+                        <img class="bg-dark" src="./images/icons/icon-arrow-right-light.svg" alt="">
+                        <span> Get in Touch</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<div class="global-container" uk-scrollspy="target: .animate-fade; cls: uk-animation-slide-bottom-medium; delay: 400;">
+    <div class="uk-section bg-gradient-blue-b-t animate-fade">
+        <div class="uk-container uk-text-center">
+            <h2 class="display-1">Quality. Speed. Safety.</h2>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+{% endblock %}
