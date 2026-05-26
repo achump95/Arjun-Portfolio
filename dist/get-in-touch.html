@@ -6,14 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <meta name="theme-color" content="#181818">
-    <title>Penta Emirates</title>
-    <meta name="description" content="Penta Emirates">
+    <title>Arjun Portfolio</title>
+    <meta name="description" content="Arjun Portfolio">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/css/uikit.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/images/icons/favicon/favicon.ico">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
@@ -23,63 +22,18 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a target="_blank" href="http://outdatedbrowser.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <main class="site-main">
-        <div style="position:absolute; width: 100%" uk-scrollspy="target: .animate-fade; cls: uk-animation-slide-bottom-medium; delay: 300;">
-            <div class="sticky-header" style="z-index:99" uk-sticky=" offset:0; show-on-up: true; animation: uk-animation-slide-top">
-                <nav class="uk-navbar-container uk-navbar-transparent animate-fade">
-                    <div class="nav-full-width">
-                        <div class="uk-container nav-container uk-visible@m">
-                            <div uk-navbar class="">
-                                <div class="uk-navbar-left">
-                                    <a class="uk-navbar-item uk-logo" href="./"><img class="logo" src="./images/logo/logo.svg" alt="Penta Emirates"></a>
-                                </div>
-                                <div class="uk-navbar-center">
-                                    <ul class="uk-navbar-nav">
-                                        <li class="uk-active"><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="services.html">Services</a></li>
-                                        <li><a href="sectors.html">Sectors</a></li>
-                                        <li><a href="projects.html">Projects</a></li>
-                                    </ul>
-                                </div>
-                                <div class="uk-navbar-right">
-                                    <div class="uk-navbar-item">
-                                        <a href="get-in-touch.html"><button href="#" class="uk-button hvr-sweep-to-right uk-button-small">
-                                                <span>Get in Touch</span>
-                                            </button> </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="nav-full-width">
-                        <div class="uk-container nav-container uk-hidden@m">
-                            <div uk-navbar class="mobile-nav">
-                                <div class="uk-navbar-left">
-                                    <a class="uk-navbar-item uk-logo" href="./"><img src="./images/logo/logo.svg" alt="Penta Emirates" style="width:40vw; max-width:150px"></a>
-                                </div>
-                                <div class="uk-navbar-right">
-                                    <a class="uk-navbar-toggle uk-navbar-toggle-animate uk-light" uk-navbar-toggle-icon href="#"></a>
-                                    <div class="uk-navbar-dropdown">
-                                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                                            <li class="uk-active"><a href="index.html">Home</a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="sectors.html">Sectors</a></li>
-                                            <li><a href="projects.html">Projects</a></li>
-                                            <li>
-                                                <a href="get-in-touch.html"><button href="#" class="uk-button hvr-sweep-to-right uk-button-small">
-                                                        <span>Get in Touch</span>
-                                                    </button> </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
+        <nav uk-sticky="start: 100; animation: uk-animation-slide-top">
+            <a href="#hero" class="nav-logo">
+                <img src="./images/logo-dark.png" alt="logo" width="100" height="100">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
         <section>
             <div class="banner-cover-bg" style="background-image: url(./images/home-bg.jpg);">
                 <div class="uk-overlay uk-light uk-position-center uk-text-center top-38">
@@ -220,115 +174,9 @@
         </div>
 
     </main>
-    <footer uk-scrollspy="target: .animate-fade; cls: uk-animation-slide-bottom-medium; delay: 400;">
-        <div class="uk-section uk-padding-remove-bottom footer-bg" style="background: url(./images/footer-bg.svg)">
-            <div class="uk-container uk-container-large">
-                <div class="uk-grid-collapse animate-fade" uk-grid>
-                    <div class="uk-width-3-5@m">
-                        <h2>Get in touch</h2>
-                    </div>
-                    <div></div>
-                </div>
-                <div class="mt-0" uk-grid>
-                    <div class="uk-width-3-5@m animate-fade">
-                        <p class="mt-2 mb-0">Interested but don’t know where to start?</p>
-                        <div class="mt-4">
-                            <div class="uk-grid uk-grid-collapse footer-row" uk-grid>
-                                <div class="uk-width-auto footer-icon uk-flex uk-flex-middle">
-                                    <img src="./images/icons/phone.svg" alt="">
-                                </div>
-                                <div class="uk-width-expand">
-                                    <div class="footer-item">
-                                        <p><a class="uk-link-text" href="tel:+971 4 2511725">+971 4 2511725</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="uk-grid uk-grid-collapse footer-row" uk-grid>
-                                <div class="uk-width-auto footer-icon uk-flex uk-flex-middle">
-                                    <img src="./images/icons/message.svg" alt="">
-                                </div>
-                                <div class="uk-width-expand">
-                                    <div class="footer-item">
-                                        <p class=""><a class="uk-link-text" href="mailto:info@pentaemirates.com">info@pentaemirates.com</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="uk-grid uk-grid-collapse footer-row" uk-grid>
-                                <div class="uk-width-auto footer-icon address">
-                                    <img src="./images/icons/location.svg" alt="">
-                                </div>
-                                <div class="uk-width-expand">
-                                    <div class="footer-item">
-                                        <h3 class="">Dubai</h3>
-                                        <p class="">
-                                            Al Qusais II, Al Nahda St, Dubai, UAE Flat No: M07,<br>
-                                            Emirates Islamic Bank Building, P.O.Box 97757,<br>
-                                            Near Al Twar Centre, Al Qusais II, Al Nahda St – Dubai
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="uk-grid uk-grid-collapse footer-row" uk-grid>
-                                <div class="uk-width-auto footer-icon address">
-                                    <img src="./images/icons/location.svg" alt="">
-                                </div>
-                                <div class="uk-width-expand">
-                                    <div class="footer-item">
-                                        <h3 class="">Abu Dhabi</h3>
-                                        <p class="">
-                                            Penta Emirates Contracting L.L.C - Branch of Abu Dhabi 1.<br>Property Number PRP64344. M39, Musaffah,<br>Abu Dhabi City
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="uk-width-2-5@m animate-fade">
-                        <div class="uk-child-width-1-2@s" uk-grid>
-                            <div>
-                                <p class="title">Quick Links</p>
-                                <div class="mt-4">
-                                    <ul class="uk-list">
-                                        <li><a class="uk-link-text" href="index.html">Home</a></li>
-                                        <li><a class="uk-link-text" href="about.html">About</a></li>
-                                        <li><a class="uk-link-text" href="services.html">Service</a></li>
-                                        <li><a class="uk-link-text" href="projects.html">Projects</a></li>
-                                        <li><a class="uk-link-text" href="get-in-touch.html">Contact</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div>
-                                <p class="title">Explore</p>
-                                <div class="mt-4">
-                                    <ul class="uk-list">
-                                        <li><a class="uk-link-text" href="sectors.html">Sectors</a></li>
-                                        <li><a class="uk-link-text" href="sustainability.html">Sustainability</a></li>
-                                        <li><a class="uk-link-text" href="#">Testimonials</a></li>
-                                        <li><a class="uk-link-text" href="#">Privacy Policy</a></li>
-                                        <li><a class="uk-link-text" href="#">Terms & Conditions</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="uk-grid uk-grid-collapse uk-child-width-expand footer-social animate-fade" uk-grid>
-                    <div class="footer-social-item"><a href="https://www.instagram.com/" target="blank" class="uk-link-text"><i class="fa-brands fa-instagram"></i> <span class="uk-visible@m">Instagram
-                            </span></a></div>
-                    <div class="footer-social-item"><a href="https://www.facebook.com/" target="blank" class="uk-link-text"><i class="fa-brands fa-facebook-f"></i> <span class="uk-visible@m">Facebook</span></a></div>
-                    <div class="footer-social-item"><a href="https://x.com/" target="blank" class="uk-link-text"><i class="fa-brands fa-x-twitter"></i> <span class="uk-visible@m">Twitter</span></a></div>
-                    <div class="footer-social-item"><a href="https://www.youtube.com/" target="blank" class="uk-link-text"><i class="fa-brands fa-youtube"></i> <span class="uk-visible@m">Youtube</span></a></div>
-                </div>
-                <div class="uk-grid-collapse uk-child-width-1-1 uk-child-width-expand@m uk-flex uk-flex-wrap uk-flex-wrap-around animate-fade" uk-grid>
-                    <div class="footer-credits - uk-text-center uk-text-left@m">
-                        <span>All Rights Reserved by Penta Emirates Contracting LLC</span>
-                    </div>
-                    <div class="footer-credits uk-text-center uk-text-right@m"><span>Made by <a class="uk-link-text" href="https://parel.co/">Parel</a></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a id="totop" class="totop uk-primary" href="#" uk-totop uk-scroll></a>
+    <footer>
+        <p><span class="footer-name">Arjun M Ponnappan</span> — Front-End Developer, Kerala, India</p>
+        <p style="font-size:0.72rem;">B.Sc Computer Science · Mahatma Gandhi University, 2016</p>
     </footer>
     <script src="./js/vendor.min.js"></script>
     <script src="./js/main.min.js"></script>
