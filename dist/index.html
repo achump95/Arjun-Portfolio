@@ -22,11 +22,16 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a target="_blank" href="http://outdatedbrowser.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <main class="site-main">
-        <nav uk-sticky="start: 100; animation: uk-animation-slide-top">
+        <nav class="site-nav" uk-sticky="start: 100; animation: uk-animation-slide-top">
             <a href="#hero" class="nav-logo">
-                <img src="./images/logo-dark.png" alt="logo" width="100" height="100">
+                <img src="./images/logo-dark.png" alt="Arjun M Ponnappan" width="100" height="100">
             </a>
-            <ul class="nav-links">
+            <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+            <ul class="nav-links" id="nav-menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -63,8 +68,8 @@
             <div class="divider reveal"></div>
             <div class="about-grid uk-grid-large" uk-grid>
                 <div class="about-text reveal">
-                    <p>I'm a <strong>UI/UX Engineer</strong> based in Kerala, India, specialising in translating thoughtful design into high-performance, cross-browser-compatible web interfaces.</p>
-                    <p>My work spans <strong>React ecosystems</strong>, modern UI component libraries, and no-code platforms like Webflow and WordPress. I bring a designer's eye and a developer's rigour to every build.</p>
+                    <p>I'm a <strong>Frontend Developer</strong> based in Kerala, India, specialising in translating thoughtful design into high-performance, cross-browser-compatible web interfaces.</p>
+                    <p>My work spans React, modern UI component libraries, and no-code platforms like Webflow and WordPress. I bring a designer's eye and a developer's rigour to every build.</p>
                     <p>Currently at <strong>Parel Creative Pvt. Ltd.</strong>, collaborating with designers and backend teams to deliver seamless digital products for clients across real estate, hospitality, and technology.</p>
                     <div class="languages">
                         <span class="lang-tag">English</span>

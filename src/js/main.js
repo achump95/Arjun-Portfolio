@@ -1,3 +1,38 @@
+// Mobile nav
+const siteNav = document.querySelector(".site-nav");
+const navToggle = document.querySelector(".nav-toggle");
+const navMenu = document.getElementById("nav-menu");
+
+function setNavOpen(open) {
+  if (!siteNav || !navToggle) return;
+  siteNav.classList.toggle("is-open", open);
+  navToggle.setAttribute("aria-expanded", String(open));
+  navToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  document.body.classList.toggle("nav-open", open);
+}
+
+if (siteNav && navToggle && navMenu) {
+  navToggle.addEventListener("click", () => {
+    setNavOpen(!siteNav.classList.contains("is-open"));
+  });
+
+  navMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => setNavOpen(false));
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") setNavOpen(false);
+  });
+
+  window.addEventListener(
+    "resize",
+    () => {
+      if (window.innerWidth > 768) setNavOpen(false);
+    },
+    { passive: true },
+  );
+}
+
 // Scroll reveal
 const reveals = document.querySelectorAll(".reveal");
 const observer = new IntersectionObserver(
